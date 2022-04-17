@@ -24,3 +24,5 @@ This study has used X-ray imagery from a dataset obtained from kaggle. The datas
 3418 X-ray images of people with
 
 ## Description
+
+Since our dataset was not Balanced , we tried to tackle that issue by augmenting images with less number ( Covid, and normal). Since Cross validation wouldn't necessarily be helpful for us we divide our given dataset(train) into a new train and validation set then only Augment the train dataset. After that we developed and observed different training and built an architecture that can learn the model and build afew models and some with pretrained  models. Most of the final results are pretty accurate at detecting Covid as it is the main purpose of the training . Also we considered different performance matrix to tackle our imbalance data and enhance our detecting model ie: Categorical accuracy, f1,recall, weighted avg.  Out of all of the Models, EfficientNetB0 seems to be slightly better than others, we could still work on our own models or enhance them but we already got good result
